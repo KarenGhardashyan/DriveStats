@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24272C">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:id="@+id/frameButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewFlipper"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_buttons"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/carsParametersButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_buttons2"
+                    android:drawableLeft="@drawable/baseline_directions_car_24"
+                    android:drawableRight="@drawable/baseline_chevron_right_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:text="Your cars parameters"
+                    android:textColor="@color/label"
+                    android:textSize="17dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/navigationButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_buttons2"
+                    android:drawableLeft="@drawable/baseline_navigation_24"
+                    android:drawableRight="@drawable/baseline_chevron_right_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:text="Navigation and map"
+                    android:textColor="@color/label"
+                    android:textSize="17dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fuelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_buttons2"
+                    android:drawableLeft="@drawable/baseline_engineering_24"
+                    android:drawableRight="@drawable/baseline_chevron_right_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:text="4 liter"
+                    android:textColor="@color/label"
+                    android:textSize="17dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/moveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_buttons2"
+                    android:drawableLeft="@drawable/baseline_card_travel_24"
+                    android:drawableRight="@drawable/baseline_chevron_right_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:text="4000 kilometer"
+                    android:textColor="@color/label"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/topBar"
+                android:inAnimation="@anim/slide_in"
+                android:outAnimation="@anim/slide_out">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/car2" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/car3" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/car4" />
+
+            </ViewFlipper>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

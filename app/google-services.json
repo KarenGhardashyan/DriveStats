@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "847093990479",
+    "project_id": "drivestats-734c2",
+    "storage_bucket": "drivestats-734c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847093990479:android:f573b08f723ad536b8d63a",
+        "android_client_info": {
+          "package_name": "com.example.drivestats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYwR5J840LjuVz8Ym2tQuvjXacXyebZho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
